@@ -1,0 +1,41 @@
+.card-body,
+.show-output {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, .5); */
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.card-body>input {
+    margin-right: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    border: 1px solid rgb(184, 180, 180);
+    padding: 10px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.one {
+    display: flex;
+    /* align-items: center; */
+}
+
+.todo-list li .show-output .one input {
+    width: 20px;
+    margin-top: 10px;
+}

@@ -1,0 +1,149 @@
+    #main_body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        height: 100vh;
+    }
+    
+    .top,
+    .bottom {
+        height: 40px;
+        /* border: 1px solid red; */
+    }
+    
+    .content {
+        flex: 1;
+        /* border: 1px solid red; */
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: calc(100vh - 171px);
+        background: white;
+        margin-top: 5px;
+    }
+    
+    .app_content_body {
+        padding: 5px;
+        flex: 1;
+        display: flex;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+    }
+    
+    .top_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* border: 1px solid gray; */
+        border-radius: 5px;
+        padding: 5px 0px;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0, .5);
+        background: white;
+    }
+    
+    .top_content .left {
+        padding-left: 5px;
+    }
+    
+    .top_content .mid form {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 3px 5px;
+    }
+    
+    .top_content .mid input,
+    button {
+        border: none;
+        background-color: #fff;
+    }
+    
+    .top_content .right {
+        padding-right: 5px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 10px 15px;
+        width: 100%;
+        box-shadow: 0px 0px 5px #0000004d;
+        border-radius: 10px;
+    }
+    
+    .bottom_content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background: white;
+    }
+    
+    .bottom_content ul li {
+        list-style: none;
+    }
+    
+    .bottom_content ul li a {
+        display: inline-block;
+        text-align: center;
+        transition: all linear .3s;
+        color: rgb(20, 18, 18);
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .bottom_content ul li a:hover {
+        color: rgb(61, 61, 243);
+    }
+    
+    .bottom_content ul li a.active {
+        color: rgb(61, 61, 243);
+    }
+    
+    .bottom_content ul li a.active i {
+        height: 25px;
+        width: 25px;
+        background: #264ae2;
+        color: #fff;
+        line-height: 20px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    
+    .bottom_content ul li a i {
+        display: inline-block;
+        width: 100%;
+        color: #023038;
+    }
+    
+    .bottom_content ul li a span {
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding-top: 5px;
+        color: rgb(16, 3, 27);
+        font-weight: 600;
+        font-size: 10px;
+        font-family: sans-serif;
+    }
+    
+    @media (min-width: 576px) {
+        #main_body {
+            width: 575px;
+            margin: 0 auto;
+            background: #ffffff36;
+            height: 95vh;
+            margin: 2vh auto;
+            border-radius: 5px;
+            backdrop-filter: blur(6px);
+        }
+        body {
+            background-image: url('https://www.wallpaperbetter.com/wallpaper/558/629/170/abstract-purple-colorful-background-1080P-wallpaper.jpg');
+            background-size: cover;
+        }
+    }
